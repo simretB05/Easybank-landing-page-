@@ -1,9 +1,6 @@
-
-/*
-const creationCardClass = ".creations__card"
-
-*/
-
+/**
+ * Setting up stagger animation for article card
+ */
 const setStaggerAnimation = () => {
     TweenMax.staggerFromTo('.article',
         1,
