@@ -15,18 +15,29 @@
 }
 
 .bars {
-  display: none;
+  //display: none;
 }
 .close {
   padding-right: $padding * 0;
 }
-.dropdown-container {
+.dropdown {
   background-color: $white;
-  width: 30rem;
-  &__list {
+  width: 650px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  font-family: $ff-public;
+  font-weight: $fw-bold;
+  padding: $padding * 2;
+}
+.dropdown-list {
+  margin: 0 auto;
+  &__item {
     list-style: none;
+    padding: $padding * 0.5;
   }
 }
+
 /* Article card */
 .article {
   box-sizing: border-box;
@@ -71,8 +82,9 @@
     }
   }
   &__credit,
-  &__content-desc, a{
-    color: $grayish-blue ;
+  &__content-desc,
+  a {
+    color: $grayish-blue;
     font-weight: $fw-light;
     text-decoration: none;
   }

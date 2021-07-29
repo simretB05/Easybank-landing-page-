@@ -19,21 +19,32 @@
   background-color: #fafafa;
 }
 
-.bars {
-  display: none;
-}
-
 .close {
   padding-right: 0rem;
 }
 
-.dropdown-container {
+.dropdown {
   background-color: white;
-  width: 30rem;
+  width: 650px;
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 700;
+  padding: 2rem;
 }
 
-.dropdown-container__list {
+.dropdown-list {
+  margin: 0 auto;
+}
+
+.dropdown-list__item {
   list-style: none;
+  padding: 0.5rem;
 }
 
 /* Article card */
@@ -95,7 +106,8 @@
   text-decoration: underline;
 }
 
-.article__credit, .article__content-desc, .article a {
+.article__credit, .article__content-desc,
+.article a {
   color: #9698a6;
   font-weight: 300;
   text-decoration: none;
