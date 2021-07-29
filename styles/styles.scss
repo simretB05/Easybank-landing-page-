@@ -11,7 +11,7 @@
 .navbar {
   display: flex;
   padding: $padding * 2;
-  background-color: $Very-Light-Gray;
+  background-color: very-light-gray;
 }
 
 .bars {
@@ -21,7 +21,7 @@
   padding-right: $padding * 0;
 }
 .dropdown-container {
-  background-color: $White;
+  background-color: $white;
   width: 30rem;
   &__list {
     list-style: none;
@@ -70,13 +70,13 @@
       text-decoration: underline;
     }
   }
-  &_credit,
-  &_content-desc {
+  &__credit,
+  &__content-desc {
     color: $grayish-blue;
     font-weight: $fw-light;
   }
   &-link {
-    color: transparent;
+    color: transparent !important;
     user-select: none;
     position: absolute;
     top: 0;
