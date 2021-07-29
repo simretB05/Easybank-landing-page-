@@ -71,9 +71,10 @@
     }
   }
   &__credit,
-  &__content-desc {
-    color: $grayish-blue !important;
+  &__content-desc, a{
+    color: $grayish-blue ;
     font-weight: $fw-light;
+    text-decoration: none;
   }
   &-link {
     color: transparent !important;
