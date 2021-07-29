@@ -95,9 +95,10 @@
   text-decoration: underline;
 }
 
-.article__credit, .article__content-desc {
-  color: #9698a6 !important;
+.article__credit, .article__content-desc, .article a {
+  color: #9698a6;
   font-weight: 300;
+  text-decoration: none;
 }
 
 .article-link {
