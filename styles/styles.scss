@@ -1,7 +1,7 @@
-@import "./partials/colors";
-@import "./partials/variables";
-@import "./partials/typography";
-@import "./partials/mixin";
+@import "../partials/colors";
+@import "../partials/variables";
+@import "../partials/typography";
+@import "../partials/mixin";
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@
 .navbar {
   display: flex;
   padding: $padding * 2;
-  background-color: very-light-gray;
+  background-color: $Very-Light-Gray;
 }
 
 .bars {
@@ -21,7 +21,7 @@
   padding-right: $padding * 0;
 }
 .dropdown-container {
-  background-color: $white;
+  background-color: $White;
   width: 30rem;
   &__list {
     list-style: none;
