@@ -96,7 +96,7 @@
 }
 
 .article__credit, .article__content-desc {
-  color: #9698a6;
+  color: #9698a6 !important;
   font-weight: 300;
 }
 
