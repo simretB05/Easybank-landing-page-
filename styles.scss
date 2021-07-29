@@ -76,7 +76,7 @@
     font-weight: $fw-light;
   }
   &-link {
-    color: transparent;
+    color: transparent !important;
     user-select: none;
     position: absolute;
     top: 0;
