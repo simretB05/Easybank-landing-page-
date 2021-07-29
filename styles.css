@@ -16,7 +16,7 @@
   display: -ms-flexbox;
   display: flex;
   padding: 2rem;
-  background-color: very-light-gray;
+  background-color: #fafafa;
 }
 
 .bars {
@@ -95,13 +95,13 @@
   text-decoration: underline;
 }
 
-.article_credit, .article_content-desc {
+.article__credit, .article__content-desc {
   color: #9698a6;
   font-weight: 300;
 }
 
 .article-link {
-  color: transparent;
+  color: transparent !important;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
