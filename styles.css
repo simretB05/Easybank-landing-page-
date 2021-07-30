@@ -171,3 +171,31 @@
   }
 }
 /*# sourceMappingURL=styles.css.map */
+
+/* why section*/
+.container{
+  width: 90%;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  font-family: 'Public Sans', sans-serif;
+}
+  
+.why-section{
+  color: hsl(233, 26%, 24%);
+}
+.why-p{
+  color: hsl(233, 8%, 62%); 
+  padding:1rem;
+
+}
+img{
+  padding: 1.8rem;
+  
+}
+.why-section{
+  font-family: 'Public Sans', sans-serif;
+  padding-top: 2rem;
+  padding-left: 7rem;
+  padding-bottom: 3rem;
+}
