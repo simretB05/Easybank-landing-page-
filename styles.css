@@ -199,8 +199,8 @@
 }
 
 .logo__image {
-  width: 144px;
-  height: 25px;
+  width: 134px;
+  height: 15px;
 }
 
 .social__media {
@@ -215,6 +215,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1rem;
+  padding: 0;
 }
 
 .image__icon {
@@ -234,12 +235,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   gap: 1rem;
   margin-bottom: 2rem;
+  padding: 0;
 }
 
 .link__item {
   list-style: none;
+  margin-bottom: 1rem;
 }
 
 .link__item .link {
@@ -270,5 +274,80 @@
 
 .copyright {
   color: #9698a6;
+}
+
+.btn-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    gap: 1.5rem;
+  }
+  .lg {
+    padding: 0.2rem;
+    margin-bottom: 3.5rem;
+  }
+  .logo__image {
+    width: 134px;
+    height: 15px;
+  }
+  .image__icon {
+    width: 20px;
+    height: 20px;
+  }
+  .link__item .link {
+    font-size: 0.9rem;
+  }
+  .copyright {
+    font-size: 0.9rem;
+  }
+  .btn {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    padding: 3rem 5rem;
+  }
+  .footer__links {
+    margin-bottom: 0;
+  }
+  .link__item-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 5rem;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
