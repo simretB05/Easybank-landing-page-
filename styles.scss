@@ -147,15 +147,12 @@
 }
 
 .lg {
-	background: $white;
 	margin-bottom: $margin + 1.5;
-	padding: $padding;
-	transform: skew(15deg);
 }
 
 .logo__image {
-	width: 134px;
-	height: 15px;
+	width: 144px;
+	height: auto;
 }
 
 .social__media {
@@ -167,10 +164,18 @@
 	padding: 0;
 }
 
-.image__icon {
+.svg__icon {
 	width: 26px;
 	height: 26px;
 	margin-bottom: $margin;
+
+	path {
+		transition: fill 0.3s;
+		&:hover,
+		&:active {
+			fill: $lime-green;
+		}
+	}
 }
 
 .footer__links {
@@ -192,6 +197,7 @@
 		color: $white;
 		font-weight: $fw-normal;
 		font-size: $fs-s + 0.2;
+		transition: color 0.3s;
 
 		&:hover,
 		&:active {
@@ -219,6 +225,10 @@
 	color: $grayish-blue;
 }
 
+.btn {
+	padding: 0.8rem 2rem;
+}
+
 .btn-copyright {
 	display: flex;
 	flex-direction: column;
@@ -239,11 +249,11 @@
 		margin-bottom: $margin + 2.5;
 	}
 	.logo__image {
-		width: 134px;
-		height: 15px;
+		width: 144px;
+		height: auto;
 	}
 
-	.image__icon {
+	.svg__icon {
 		width: 20px;
 		height: 20px;
 	}

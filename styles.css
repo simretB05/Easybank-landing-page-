@@ -191,16 +191,12 @@
 }
 
 .lg {
-  background: white;
   margin-bottom: 2.5rem;
-  padding: 1rem;
-  -webkit-transform: skew(15deg);
-          transform: skew(15deg);
 }
 
 .logo__image {
-  width: 134px;
-  height: 15px;
+  width: 144px;
+  height: auto;
 }
 
 .social__media {
@@ -218,10 +214,19 @@
   padding: 0;
 }
 
-.image__icon {
+.svg__icon {
   width: 26px;
   height: 26px;
   margin-bottom: 1rem;
+}
+
+.svg__icon path {
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+.svg__icon path:hover, .svg__icon path:active {
+  fill: #31d35c;
 }
 
 .footer__links {
@@ -251,6 +256,8 @@
   color: white;
   font-weight: 400;
   font-size: 1.1rem;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .link__item .link:hover, .link__item .link:active {
@@ -274,6 +281,10 @@
 
 .copyright {
   color: #9698a6;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
 }
 
 .btn-copyright {
@@ -310,10 +321,10 @@
     margin-bottom: 3.5rem;
   }
   .logo__image {
-    width: 134px;
-    height: 15px;
+    width: 144px;
+    height: auto;
   }
-  .image__icon {
+  .svg__icon {
     width: 20px;
     height: 20px;
   }
