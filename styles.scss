@@ -100,8 +100,17 @@
     border-radius: 25px;
     font-size: 0.71rem;
     padding: 0.3rem;
-    border: 0.5px solid $light-grayish-blue;
-    background-color: $lime-green;
+    color: $white;
+    background: linear-gradient(45deg, $lime-green, $bright-cyan);
+    border-radius: $margin + 0.9;
+    padding: 1rem 2.8rem;
+    margin-bottom: $margin + 1;
+    transition: all 0.3s;
+  }
+  &:hover,
+  &:active {
+    color: $white;
+    background: linear-gradient(45deg, hsl(136, 65%, 44%), hsl(192, 70%, 45%));
   }
   @include laptop-query {
     color: $white;
@@ -115,6 +124,7 @@
     left: 1130px;
   }
 }
+
 /* Article card */
 .article {
   box-sizing: border-box;
