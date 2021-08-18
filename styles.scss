@@ -93,13 +93,15 @@
   display: none;
 }
 .navbar-btn {
+  position: relative;
+  top: -860px;
   @include tablet-query {
     position: relative;
     top: -300px;
     left: 650px;
     border-radius: 25px;
     font-size: 0.71rem;
-    padding: 0.3rem;
+    padding: 0.1rem;
     color: $white;
     background: linear-gradient(45deg, $lime-green, $bright-cyan);
     border-radius: $margin + 0.9;

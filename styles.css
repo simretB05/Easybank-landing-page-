@@ -130,6 +130,11 @@
   display: none;
 }
 
+.navbar-btn {
+  position: relative;
+  top: -860px;
+}
+
 @media screen and (min-width: 768px) {
   .navbar-btn {
     position: relative;
@@ -137,7 +142,7 @@
     left: 650px;
     border-radius: 25px;
     font-size: 0.71rem;
-    padding: 0.3rem;
+    padding: 0.1rem;
     color: white;
     background: linear-gradient(45deg, #31d35c, #2bb7da);
     border-radius: 1.9rem;
