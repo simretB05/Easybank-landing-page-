@@ -9,42 +9,152 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 8rem;
+  }
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2rem;
-  background-color: #fafafa;
+  padding: 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 90px;
+  background-color: white;
 }
 
-.close {
-  padding-right: 0rem;
+.change {
+  position: relative;
+  left: 789px;
+  top: -76px;
 }
 
 .dropdown {
-  background-color: white;
-  width: 650px;
-  height: 270px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  padding: 2rem;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown {
+    width: 600px;
+    position: relative;
+    top: -79px;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown {
+    width: 600px;
+    position: relative;
+    top: -79px;
+    left: 400px;
+  }
 }
 
 .dropdown-list {
-  margin: 0 auto;
+  list-style: none;
+}
+
+.dropdown-link {
+  text-decoration: none;
+  color: #2d314d;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-link {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-link {
+    text-decoration: underline;
+  }
 }
 
 .dropdown-list__item {
   list-style: none;
   padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-list__item {
+    width: 70px;
+    padding: 0 0 0 0.01;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-list__item {
+    width: 90px;
+  }
+}
+
+.bars {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .bars {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bars {
+    display: none;
+  }
+}
+
+.close {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-btn {
+    position: relative;
+    top: -300px;
+    left: 650px;
+    border-radius: 25px;
+    font-size: 0.71rem;
+    padding: 0.3rem;
+    border: 0.5px solid #f3f4f6;
+    background-color: #31d35c;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-btn {
+    color: white;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 0.71rem;
+    padding: 0.5rem;
+    border: 0.5px solid #f3f4f6;
+    position: relative;
+    top: -300px;
+    left: 1130px;
+  }
 }
 
 /* Article card */
