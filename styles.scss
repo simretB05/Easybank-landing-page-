@@ -218,6 +218,44 @@ header, .dropdown, .dropdown-list{
   }
 }
 
+/*
+* WHY
+*/
+
+/* Why section*/
+.why{
+  padding:7rem 0 5rem 0;
+}
+
+.why .container{
+  width: 90%;
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  font-family: 'Public Sans', sans-serif;
+}
+  
+.why-section{
+  color: hsl(233, 26%, 24%);
+  font-family: 'Public Sans', sans-serif;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+
+  @include tablet-query{
+    padding-left: 7rem;
+  }
+}
+.why-p{
+  color: hsl(233, 8%, 62%); 
+  padding:1rem;
+
+}
+.why-section img{
+  padding: 1.8rem;
+  
+}
+
 // Footer Section
 .footer {
   background-color: $dark-blue;
