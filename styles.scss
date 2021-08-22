@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: $ff-public;
 }
+
 .logo {
   @include tablet-query {
     margin-left: 4rem;
@@ -207,7 +208,7 @@
 }
 /* Articles section */
 .articles {
-  padding: 5rem 1rem;
+  padding: 5rem 0;
   background-color: $very-light-gray;
 
   &-title {
@@ -221,7 +222,9 @@
   &__list {
     display: grid;
     grid-gap: 2rem;
+    padding: 0;
   }
+
   @include tablet-query {
     padding: 5rem;
     &__list {
