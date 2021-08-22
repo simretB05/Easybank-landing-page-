@@ -10,31 +10,34 @@
 }
 
 setStaggerAnimation()
-const dropDown= document.querySelector(".sb1")
-const bars= document.querySelector(".bars")
 
 
-bars.addEventListener("click",function(){
-    dropDown.classList.toggle("change")
-console.log(bars);
-})
 // const dropDown= document.querySelector(".sb1")
 // const bars= document.querySelector(".bars")
-// const closeDown= document.querySelector(".close")
-// const close= document.querySelector(".close")
 
-// bars.addEventListener("click",function(){
-//     if(document.querySelector(".bars")){
+
+// bars.addEventListener("click", function(){
 //     dropDown.classList.toggle("change")
-//     }
-
 // console.log(bars);
 // })
 
-// close.addEventListener("click",function(){
-//     if(document.querySelector(".close")){
-// closeDown.classList.toggle("unchange")
-//     }
+const dropDown= document.querySelector(".sb1")
+const bars= document.querySelector(".bars")
+const closeDown= document.querySelector(".close")
+const close= document.querySelector(".close")
 
-// console.log(close);
-// })
+bars.addEventListener("click",function(){
+    if(document.querySelector(".bars")){
+    dropDown.classList.toggle("change")
+    }
+
+console.log(bars);
+})
+
+close.addEventListener("click",function(){
+    if(document.querySelector(".close")){
+closeDown.classList.toggle("unchange")
+    }
+
+console.log(close);
+})
