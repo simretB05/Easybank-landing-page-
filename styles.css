@@ -186,6 +186,47 @@
   }
 }
 
+/*
+* WHY
+*/
+/* Why section*/
+.why {
+  padding: 7rem 0 5rem 0;
+}
+
+.why .container {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.why-section {
+  color: #2d314d;
+  font-family: 'Public Sans', sans-serif;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .why-section {
+    padding-left: 7rem;
+  }
+}
+
+.why-p {
+  color: #9698a6;
+  padding: 1rem;
+}
+
+.why-section img {
+  padding: 1.8rem;
+}
+
 /* Article card */
 .article {
   -webkit-box-sizing: border-box;
