@@ -244,6 +244,7 @@ header, .dropdown, .dropdown-list {
 
 /* Articles section */
 .articles {
+  padding: 5rem 0;
   background-color: #fafafa;
 }
 
@@ -260,6 +261,7 @@ header, .dropdown, .dropdown-list {
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {

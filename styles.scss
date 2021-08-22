@@ -8,6 +8,7 @@
   box-sizing: border-box;
   font-family: $ff-public;
 }
+
 .logo {
   @include tablet-query {
     margin-left: 4rem;
@@ -185,6 +186,7 @@ header, .dropdown, .dropdown-list{
 
 /* Articles section */
 .articles {
+  padding: 5rem 0;
   background-color: $very-light-gray;
 
   &-title {
@@ -198,7 +200,9 @@ header, .dropdown, .dropdown-list{
   &__list {
     display: grid;
     grid-gap: 2rem;
+    padding:0;
   }
+
   @include tablet-query {
     padding: 5rem;
     &__list {
