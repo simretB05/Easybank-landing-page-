@@ -87,6 +87,7 @@
   left:0;
   right:0;
   margin:auto;
+  z-index: 1;
 
   @include tablet-query {
     width: 700px;
@@ -137,6 +138,24 @@
   }
   @include laptop-query {
     display: none;
+  }
+}
+
+.phone-img{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  margin:auto;
+  height: 125%;
+}
+
+.hero-body{
+  margin-top: 7rem;
+  text-align: center;
+  @include tablet-query{
+    text-align: left;
+    margin-top: 0;
   }
 }
 
