@@ -12,69 +12,110 @@
   font-family: "Public Sans", sans-serif;
 }
 
+.navbar {
+  padding-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    display: block;
+    padding-left: 10rem;
+  }
+}
+
+.img.show {
+  display: inline-block;
+  margin-left: 10.5rem;
+}
+
 @media screen and (min-width: 768px) {
-  .logo {
-    margin-left: 4rem;
+  .img.show {
+    margin-left: 35.16rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .logo {
-    margin-left: 8rem;
+  .img.show {
+    display: none;
   }
 }
 
-.navbar {
-  padding: 1rem;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  height: 90px;
-  background-color: white;
+.img {
+  display: none;
 }
 
-.change {
-  position: relative;
-  left: 789px;
-  top: -76px;
+@media screen and (min-width: 1024px) {
+  .img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .close {
+    display: none;
+  }
 }
 
 .dropdown {
-  height: 200px;
+  padding: 1rem;
+  height: 240px;
+  display: none;
   border-radius: 5px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-  margin: 1rem 1.5rem 5rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  border: 1px solid rgba(241, 238, 238, 0.2);
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   background-color: white;
-  margin: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .dropdown {
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    width: 600px;
-    position: relative;
-    top: -79px;
-    left: 100px;
-  }
+  margin: 0.51rem;
 }
 
 @media screen and (min-width: 1024px) {
   .dropdown {
-    width: 600px;
+    height: 65.9px;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
     position: relative;
     top: -79px;
-    left: 400px;
+    left: 200px;
+  }
+}
+
+.change {
+  width: 660px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .change {
+    width: 700px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .change {
+    width: 400px;
+    position: relative;
+    top: -50px;
   }
 }
 
@@ -92,16 +133,10 @@
   color: #2d314d;
 }
 
-@media screen and (min-width: 768px) {
-  .dropdown-link:hover {
-    border-bottom: 0.21rem solid #31d35c;
-    padding-bottom: 1.8rem;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .dropdown-link:hover {
     border-bottom: 0.3rem solid #31d35c;
+    padding-bottom: 1rem;
   }
 }
 
@@ -112,23 +147,10 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  .dropdown-list__item {
-    width: 70px;
-    padding: 0 0 0 0.01;
-    display: inline-block;
-    font-size: 0.9rem;
-  }
-}
-
 @media screen and (min-width: 1024px) {
   .dropdown-list__item {
-    width: 90px;
+    display: inline-block;
   }
-}
-
-.bars {
-  position: relative;
 }
 
 @media screen and (min-width: 768px) {
@@ -148,12 +170,16 @@
   top: -860px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .navbar-btn {
+    color: white;
     width: 150px;
+    border-radius: 25px;
+    font-size: 0.71rem;
+    padding: 0.5rem;
     position: relative;
-    top: -300px;
-    left: 650px;
+    top: -109px;
+    left: 700px;
     border: 0.1px solid #8f8ff1;
     border-radius: 25px;
     font-size: 0.71rem;
@@ -171,19 +197,6 @@
 .navbar-btn:hover, .navbar-btn:active {
   color: white;
   background: linear-gradient(45deg, #27b94e, #22a3c3);
-}
-
-@media screen and (min-width: 1024px) {
-  .navbar-btn {
-    color: white;
-    width: 150px;
-    border-radius: 25px;
-    font-size: 0.71rem;
-    padding: 0.5rem;
-    position: relative;
-    top: -300px;
-    left: 1130px;
-  }
 }
 
 /* Article card */

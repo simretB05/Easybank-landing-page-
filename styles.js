@@ -39,14 +39,25 @@ setStaggerAnimation()
 setIntersectionObserver()
 
 
-const dropDown = document.querySelector(".sb1")
+
 const bars = document.querySelector(".bars")
+const dropDown = document.querySelector(".sb1")
+const close= document.querySelector(".close")
 
 
 bars.addEventListener("click", function () {
-    dropDown.classList.toggle("change")
-    console.log(bars);
+ dropDown.classList.toggle("change")
+ bars.classList.remove("show")
+  close.classList.add("show") 
+ 
 })
+close.addEventListener("click", function () {
+   
+    dropDown.classList.toggle("change")
+    bars.classList.remove("close")
+    close.classList.add("img") 
+})
+
 // const dropDown= document.querySelector(".sb1")
 // const bars= document.querySelector(".bars")
 
@@ -65,7 +76,6 @@ bars.addEventListener("click", function () {
 //     if(document.querySelector(".bars")){
 //     dropDown.classList.toggle("change")
 //     }
-
 // console.log(bars);
 // })
 
