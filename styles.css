@@ -9,42 +9,222 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Public Sans", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-left: 4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    margin-left: 8rem;
+  }
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 2rem;
-  background-color: #fafafa;
+  padding: 1rem;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 90px;
+  background-color: white;
 }
 
-.close {
-  padding-right: 0rem;
+.change {
+  position: relative;
+  left: 789px;
+  top: -76px;
 }
 
 .dropdown {
-  background-color: white;
-  width: 650px;
-  height: 270px;
+  height: 200px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  margin: 1rem 1.5rem 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Public Sans", sans-serif;
-  font-weight: 700;
-  padding: 2rem;
+  background-color: white;
+  margin: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown {
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 600px;
+    position: relative;
+    top: -79px;
+    left: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown {
+    width: 600px;
+    position: relative;
+    top: -79px;
+    left: 400px;
+  }
 }
 
 .dropdown-list {
-  margin: 0 auto;
+  list-style: none;
+}
+
+.dropdown-link {
+  color: #2d314d;
+  text-decoration: none;
+}
+
+.dropdown-link:hover {
+  border-bottom: 0.21rem solid #31d35c;
+  color: #2d314d;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-link:hover {
+    border-bottom: 0.21rem solid #31d35c;
+    padding-bottom: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-link:hover {
+    border-bottom: 0.3rem solid #31d35c;
+  }
 }
 
 .dropdown-list__item {
   list-style: none;
+  font-weight: 400;
   padding: 0.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-list__item {
+    width: 70px;
+    padding: 0 0 0 0.01;
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropdown-list__item {
+    width: 90px;
+  }
+}
+
+.bars {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .bars {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bars {
+    display: none;
+  }
+}
+
+.navbar-btn {
+  position: relative;
+  top: -860px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-btn {
+    width: 150px;
+    position: relative;
+    top: -300px;
+    left: 650px;
+    border: 0.1px solid #8f8ff1;
+    border-radius: 25px;
+    font-size: 0.71rem;
+    padding: 0.1rem;
+    color: white;
+    background: linear-gradient(45deg, #31d35c, #2bb7da);
+    border-radius: 1.9rem;
+    padding: 0.6rem 1.2rem;
+    margin-bottom: 2rem;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+}
+
+.navbar-btn:hover, .navbar-btn:active {
+  color: white;
+  background: linear-gradient(45deg, #27b94e, #22a3c3);
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-btn {
+    color: white;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 0.71rem;
+    padding: 0.5rem;
+    position: relative;
+    top: -300px;
+    left: 1130px;
+  }
+}
+
+/*
+* WHY
+*/
+/* Why section*/
+.why {
+  padding: 7rem 0 5rem 0;
+}
+
+.why .container {
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.why-section {
+  color: #2d314d;
+  font-family: 'Public Sans', sans-serif;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .why-section {
+    padding-left: 7rem;
+  }
+}
+
+.why-p {
+  color: #9698a6;
+  padding: 1rem;
+}
+
+.why-section img {
+  padding: 1.8rem;
 }
 
 /* Article card */
@@ -128,7 +308,7 @@
 
 /* Articles section */
 .articles {
-  padding: 5rem 1rem;
+  padding: 5rem 0;
   background-color: #fafafa;
 }
 
@@ -145,6 +325,7 @@
   display: -ms-grid;
   display: grid;
   grid-gap: 2rem;
+  padding: 0;
 }
 
 @media screen and (min-width: 768px) {
