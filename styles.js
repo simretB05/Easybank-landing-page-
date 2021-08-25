@@ -46,43 +46,18 @@ const close= document.querySelector(".close")
 
 
 bars.addEventListener("click", function () {
+    close.classList.add("show") 
  dropDown.classList.toggle("change")
  bars.classList.remove("show")
-  close.classList.add("show") 
+bars.classList.remove("close")
+
  
 })
 close.addEventListener("click", function () {
+    bars.classList.add("show")
    
     dropDown.classList.toggle("change")
-    bars.classList.remove("close")
-    close.classList.add("img") 
+    close.classList.remove("close") 
+   
 })
 
-// const dropDown= document.querySelector(".sb1")
-// const bars= document.querySelector(".bars")
-
-
-// bars.addEventListener("click", function(){
-//     dropDown.classList.toggle("change")
-// console.log(bars);
-// })
-
-// const dropDown= document.querySelector(".sb1")
-// const bars= document.querySelector(".bars")
-// const closeDown= document.querySelector(".close")
-// const close= document.querySelector(".close")
-
-// bars.addEventListener("click",function(){
-//     if(document.querySelector(".bars")){
-//     dropDown.classList.toggle("change")
-//     }
-// console.log(bars);
-// })
-
-// close.addEventListener("click",function(){
-//     if(document.querySelector(".close")){
-// closeDown.classList.toggle("unchange")
-//     }
-
-// console.log(close);
-// })
