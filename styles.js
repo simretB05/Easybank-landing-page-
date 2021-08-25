@@ -39,7 +39,7 @@ setStaggerAnimation()
 setIntersectionObserver()
 
 
-
+const navbarToggle = document.querySelector('.navbar-toggle')
 const bars = document.querySelector(".bars")
 const dropDown = document.querySelector(".sb1")
 const close = document.querySelector(".close")
@@ -55,6 +55,7 @@ bars.addEventListener("click", function () {
     dropDown.classList.toggle("change")
     bars.classList.remove("show")
     close.classList.add("show")
+    navbarToggle.setAttribute('aria-label', 'Close menu')
 })
 
 /*
@@ -64,6 +65,7 @@ close.addEventListener("click", function () {
     dropDown.classList.toggle("change")
     close.classList.remove("show")
     bars.classList.add("show")
+    navbarToggle.setAttribute('aria-label', 'Open menu')
 })
 
 // const dropDown= document.querySelector(".sb1")
