@@ -42,22 +42,27 @@ setIntersectionObserver()
 
 const bars = document.querySelector(".bars")
 const dropDown = document.querySelector(".sb1")
-const close= document.querySelector(".close")
+const close = document.querySelector(".close")
 
-
+/*
+* Show/ hide nav dropdown
+*
+*
+*
+* Handle hamburger button click event  
+*/
 bars.addEventListener("click", function () {
-    close.classList.add("show") 
- dropDown.classList.toggle("change")
- bars.classList.remove("show")
-bars.classList.remove("close")
-
- 
-})
-close.addEventListener("click", function () {
-    bars.classList.add("show")
-   
     dropDown.classList.toggle("change")
-    close.classList.remove("close") 
-   
+    bars.classList.remove("show")
+    close.classList.add("show")
+})
+
+/*
+* Handle close button click event
+*/
+close.addEventListener("click", function () {
+    dropDown.classList.toggle("change")
+    close.classList.remove("show")
+    bars.classList.add("show")
 })
 
