@@ -68,31 +68,3 @@ close.addEventListener("click", function () {
     navbarToggle.setAttribute('aria-label', 'Open menu')
 })
 
-// const dropDown= document.querySelector(".sb1")
-// const bars= document.querySelector(".bars")
-
-
-// bars.addEventListener("click", function(){
-//     dropDown.classList.toggle("change")
-// console.log(bars);
-// })
-
-// const dropDown= document.querySelector(".sb1")
-// const bars= document.querySelector(".bars")
-// const closeDown= document.querySelector(".close")
-// const close= document.querySelector(".close")
-
-// bars.addEventListener("click",function(){
-//     if(document.querySelector(".bars")){
-//     dropDown.classList.toggle("change")
-//     }
-// console.log(bars);
-// })
-
-// close.addEventListener("click",function(){
-//     if(document.querySelector(".close")){
-// closeDown.classList.toggle("unchange")
-//     }
-
-// console.log(close);
-// })

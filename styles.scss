@@ -78,6 +78,11 @@
   width: 90%;
   max-width: 660px;
   display: flex;
+<<<<<<< HEAD
+  position: relative;
+  top: 30px;
+  transition: margin-right 4s ease-in-out;
+=======
 
   /*
   * Dropdown list absolute to .navbar
@@ -89,6 +94,7 @@
   margin:auto;
   z-index: 1;
 
+>>>>>>> 9343d9faff8517f03a5d21424bbbed3693bb91db
   @include tablet-query {
     width: 700px;
   }

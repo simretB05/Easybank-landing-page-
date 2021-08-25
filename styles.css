@@ -105,6 +105,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  position: relative;
+  top: 30px;
+  -webkit-transition: margin-right 4s ease-in-out;
+  transition: margin-right 4s ease-in-out;
+=======
   /*
   * Dropdown list absolute to .navbar
   */
@@ -114,6 +120,7 @@
   right: 0;
   margin: auto;
   z-index: 1;
+>>>>>>> 9343d9faff8517f03a5d21424bbbed3693bb91db
 }
 
 @media screen and (min-width: 768px) {
